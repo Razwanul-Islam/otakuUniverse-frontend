@@ -16,10 +16,10 @@ body{
   }
 
 /* Utility class start */
-.fw-8{
+.fs-8{
     font-size: .8rem;
 }
-.fw-7{
+.fs-7{
     font-size: .9rem;
 }
 /* Utility class end */
@@ -119,4 +119,47 @@ a:hover{
 }
 .sub-nav .sheir-btn svg{
     margin-top: 5px;
+}
+
+/* Singal post start */
+
+.post-img{
+
+}
+
+.post-img-box .single-img{
+    position: relative;
+    /* height: 200px; */
+    width: 100%;
+
+}
+.post-video{
+    position: relative;
+
+
+}
+.post-video-box{
+    
+}
+.single-video{
+    position: absolute;
+    object-fit: cover;
+    height: 98%;
+    width: 99%;
+
+}
+
+.post-more-box{
+    color: #EDF4F2;
+    background-color: rgba(88, 86, 86, 0.246);
+    border-radius: 5px;
+    height: 193px;
+    text-align: center;
+    justify-content: center;
+    padding: 4rem 0rem
+    
+
+}
+.post-more-video{
+    /* margin-top: 5px; */
 }
