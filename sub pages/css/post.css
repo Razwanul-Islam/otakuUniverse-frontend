@@ -55,6 +55,9 @@ a{
 a:hover{
     color: #79D70F;
 }
+a svg:hover{
+    color: #79D70F;
+}
 
 /*                     SubNAv start here */
 .sub-nav{
@@ -118,7 +121,6 @@ a:hover{
 }
 .sub-nav .sheir-btn:hover{
     background-color: #0000002c;
-
 }
 .sub-nav .sheir-btn svg{
     margin-top: 5px;
@@ -129,10 +131,6 @@ a:hover{
 .post-img{
     /* padding-bottom: 0px !important; */
     position: relative;
-
-   
-
-
 }
 .post-img-box{
     position: relative;
@@ -164,7 +162,6 @@ a:hover{
 
 
 }
-
 .post-img-box .text-font{
     z-index: 3;
 }
@@ -175,14 +172,10 @@ a:hover{
     color: red;
 }
 
-
-
 /*             Vdeo part */
 .post-video{
     position: relative;
-
 }
-
 .play{
     display: inline-flex;
     align-items: center;
@@ -219,18 +212,13 @@ a:hover{
 
 }
 .three-dot:hover .three-dot-icon{
-
     color: #79D70F;
     z-index: 10;
-
-
-
 }
 .three-dot-icon{
     color: rgb(255, 255, 255);
     position: relative;
     z-index: 10;
-
 }
 
 .three-dot-icon::after{
@@ -260,7 +248,7 @@ a:hover{
 
 }
 
-/*                       Post more box */
+/*                      Right Post more box */
 .post-more-box{
     position: relative;
     color: #EDF4F2;
@@ -280,6 +268,279 @@ a:hover{
  
 }
 
-.post-more-video{
-    /* margin-top: 5px; */
+
+/*                    Heading for all box Start*/
+.heading-text{
+    color: black;
+ }
+.heading-text:hover svg{
+    color: #79D70F;
+ }
+ .heading-text a{
+     display: inline-block;
+     margin: 0;
+ }
+ .heading-text .heading-text-p{
+     color: black;
+     font-size: 1.5rem;
+     padding-left: 5px;
+     margin: 14px 0px;
+     position: relative;
+ }
+ .heading-text .heading-text-p::before{
+     content: "";
+     position: absolute;
+     height: 57%;
+     width: 3%;
+     left: -5px;
+     top: 9px;
+     background: #79D70F;
+     
+ }
+ .heading-text-p .degit{
+     position: relative;
+     top: -3px;
+ 
+ }
+ .heading-text-p:hover .icon{
+     color: #79D70F;
+ 
+ }
+
+/*                     Heading for all box end*/
+
+
+/*                       more trailor box         */
+
+
+
+.more-trailer-box{
+    /* border: 2px solid red; */
+
+}
+.more-trailer-box a{
+    color: black;
+
+}
+.left-part-video{
+    /* border: 2px solid rgb(32, 16, 16); */
+    margin: 0rem 1rem;
+
+
+}
+.more-trailer-video{
+    position: relative;
+    overflow: hidden;
+    margin: 0rem 2rem;
+
+}
+.carsoul-video{
+    /* border: 2px solid blue; */
+    /* margin: 0px 40px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: relative;
+    width: 200%;
+    /* left: -10%; */
+    transition: all;
+    transition-timing-function: ease;
+    transition-delay: .1s;
+    transition-duration: 1s;
+}
+.box-1{
+    /* position: absolute; */
+    /* left: 20%; */
+    float: left;
+    width: 30%;
+   
+}
+.more-trailer-link{
+    padding: 5px 7px;
+    position: relative;
+    height: 100%;
+    width: 99%;
+
+    /* height: 400px; */
+    /* width: 300px; */
+
+}
+.play-btn-small{
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    bottom: 28px;
+    left: 20px;
+    z-index: 3;
+    color: #EDF4F2;
+
+}
+.more-trailer-link:hover svg{
+    color: #79D70F;
+   
+}
+.video-1{
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    transition: all;
+    transition-delay: 1s;
+}
+.trailer-a{
+    color: black;
+    font-weight: 400;
+}
+.trailer-a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.side-icon-right{
+    color: black;
+    position: absolute;
+    top: 132px;
+    right: 18px;
+    font-size: 2rem;
+}
+.side-icon-left{
+    color: black;
+    position: absolute;
+    top: 132px;
+    left: 18px;
+    font-size: 2rem;
+}
+/*                                Img  Part   */
+.ImgPart{
+    position: relative;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: .1s;
+    transition-duration: 1s;
+}
+.more-image{
+    margin: 0rem 4rem;
+}
+#sliderImg {
+    text-align: center;
+}
+#sliderImg a img{
+    max-width: 175px;
+    width: 24%;
+}
+/*                                      Top Cast start  */
+.artist-list{
+    /* border: 1px solid red; */
+
+}
+
+.artist{
+    /* border: 1px solid rgb(60, 56, 56); */
+    padding: .4rem;
+
+}
+.artist-1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+.artist-1 p{
+   color: black;
+    padding: 1.5rem 1rem;
+
+}
+.artist-1 img{
+    width: 25%;
+    clip-path: circle();
+
+}
+.artist-img{
+}
+
+/*                        right-part-moreExp                  */
+.right-part-moreExp{
+    /* border: 2px solid red; */
+
+}
+.list-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.myOverly{
+    background: rgba(0, 0, 0, 0.205);
+}
+.list-image:hover .overly{
+    z-index: 2;
+    background: rgba(153, 137, 137, 0.388);
+}
+
+.list-link{
+        /* position: relative; */
+
+        /* height: 100px;
+        width: 100px; */
+}
+.myBtn-small{
+    bottom: 10px;
+    left: 5px;
+}
+.list-link img{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+/*                   Editional List start */
+.editional-list{
+    /* border: 1px solid black; */
+}
+.movie-item{
+    /* border: 1px solid black; */
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 3px;
+    margin: 0;
+    height: 76px;
+
+}
+.movie-item-text{
+
+
+}
+.movie-item-text a:hover{
+    text-decoration: underline;
+
+}
+.update-time{
+    float: bottom;
+}
+.movie-item-img{
+    /* position: relative; */
+
+}
+.movie-item-img img{
+    height: 100%;
+    width: 90%;
+    float: right;
+}
+.movie-item-img:hover{
+    opacity: .8;
+}
+.creat-a-list{
+    padding: 5px;
+    
+} 
+.creat-a-list:hover{
+    background-color: rgba(63, 60, 60, 0.191);
+    
+} 
+.creat-a-list a{
+    text-align: center;
+    color: black;
+
+}
+.creat-a-list:hover svg{
+    color: black !important;
 }
