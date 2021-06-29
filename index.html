@@ -14,18 +14,20 @@
     <!-- Nav section -->
     <nav class="nav">
         <span> <!-- Span for nav links -->
-            <ul class="nav-links">
+            <button class="bar" type="button" id="nav__btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="sidebar">
                 <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">Anime</a></li>
+                <li class="item"><a href="./sub pages/post.html">Anime</a></li>
                 <li class="item"><a href="#">Manga</a></li>
-                <form action="/search" class="search-form" method="post">
+            </ul>
+            <form action="/search" class="search-form" method="post">
                     <input type="text" class="search-input" placeholder="Search here..">
                     <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
-                
-            </ul>
         </span>
         <span><!-- Span for Login link -->
             <a class="login-link" href="#">Login</a>
@@ -43,21 +45,21 @@
             </ol>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/174965.jpg" class="d-block w-100" style="max-height: 720px;" alt="...">
+                <img src="./images/174965.jpg" class="d-block w-100 carousel-img" style="max-height: 720px;" alt="...">
                 <div class="carousel-caption d-md-block">
                 <h3>One Pice</h3>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/wp8948742-naruto-banner-wallpapers.jpg" class="d-block w-100" style="max-height: 720px;" alt="...">
+                <img src="./images/wp8948742-naruto-banner-wallpapers.jpg" class="d-block w-100 carousel-img" style="max-height: 720px;" alt="...">
                 <div class="carousel-caption d-md-block">
                 <h3>Naruto Shipudden</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/wp7112601-youtube-banner-goku-wallpapers.jpg" class="d-block w-100" style="max-height: 720px;" alt="...">
+                <img src="./images/wp7112601-youtube-banner-goku-wallpapers.jpg" class="d-block w-100 carousel-img" style="max-height: 720px;" alt="...">
                 <div class="carousel-caption  d-md-block">
                 <h3>Dragon ball super</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -76,15 +78,8 @@
     </div>
     <!-- End of carousel section -->
 
-    <!-- Anime and Info button -->
-    <div class="btn-group-center">
-        <button class="btn btn-success btn-pilled mx-3">Anime</button>
-        <button class="btn btn-info btn-pilled mx-3">Info</button>
-
-    </div>
-
     <!-- Anime Posts -->
-    <div class="px-2 row">
+    <div class="row post-row">
         <!-- post card -->
         <div class="post-card col-xs-12 col-sm-6 col-md-3 col-lg-2">
             <img src="./images/images (3).jpeg" alt="" class="poster">
@@ -117,10 +112,42 @@
         </div>
     </div>
 
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle">
+                <ul class="link-list">
+                    <li class="list-item"><a class="link" href="">Home</a></li>
+                    <li class="list-item"><a class="link" href="">Anime</a></li>
+                    <li class="list-item"><a class="link" href="">Manga</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle">
+                <ul class="link-list">
+                    <li class="list-item"><a href="" class="link">Login</a></li>
+                    <li class="list-item"><a href="" class="link">Registration</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle">
+                <h3>Follow us on</h3>
+                <div class="social-account">
+
+                    <a href="" class="facebook-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="" class="twitter-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-muted">otakuUniverse All Right Reserved.</div>
+    </div>
+
 
 <!-- JS section -->
 <script src="./js/all.min.js"></script>
 <script src="./js/jquery-slim.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
