@@ -1,26 +1,29 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(3359360.jpg);
+body{
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/168772.jpg);
     background-position: center;
     background-size: cover;
+    
+
+    
 }
 
-.container {
+.container{
     width: 400px;
-    height: 400px;
-    background: rgba(1, 1, 1, .4);
-    position: relative;
-    margin: 8% auto;
+    height: 520px;
+    background: rgba(1,1,1,.5);
+    position:  relative;
+    margin: 6% auto;
     border-radius: 9px;
     box-shadow: 5px 5px 19px #000;
 }
 
-h3 {
+h3{
     font-size: 40px;
     position: relative;
     text-align: center;
@@ -28,7 +31,7 @@ h3 {
     color: #BCD615;
 }
 
-.container form {
+.container form{
     width: 350px;
     position: relative;
     top: 30px;
@@ -36,18 +39,22 @@ h3 {
     right: 0px;
 }
 
-.dash {
+ .dash{
     font-size: 15px;
+    color: #EEE1C5;
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 5px ;
     margin: 7px 20px;
     border: 0;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid #EEE1C5;
     outline: none;
     background: transparent;
 }
-
-.btn {
+.dash::placeholder{
+    color: darkgrey;
+    opacity: 1;
+}
+.btn{
     height: 40px;
     width: 80%;
     font-size: 17px;
@@ -57,33 +64,32 @@ h3 {
     left: 16%;
     background: orange;
 }
-
-.btn:hover {
+.btn:hover{
     background: #BCD615;
 }
-
-.link {
+.terms{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: #EEE1C5;
+}
+.link{
     position: relative;
-    top: 40px;
-    left: 10px;
+    
     color: #BCD601;
 }
-
-.link:hover {
+.link:hover{
     color: lightgreen;
 }
-
-.lst {
+.lst{
     text-align: center;
     color: aqua;
+    
     position: relative;
-    top: 90px;
+    top: 50px;
 }
-
-.link2 {
+.link2{
     color: #BCD601;
 }
-
-.link2:hover {
+.link2:hover{
     color: #BCD615;
 }
