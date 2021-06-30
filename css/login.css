@@ -6,14 +6,18 @@
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/3359360.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
 }
 
 .container {
     width: 400px;
     height: 400px;
-    background: rgba(1, 1, 1, .4);
+    background: rgba(1, 1, 1, .5);
     position: relative;
     margin: 8% auto;
     border-radius: 9px;
