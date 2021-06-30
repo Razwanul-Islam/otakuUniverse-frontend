@@ -172,7 +172,7 @@ a svg:hover{
     color: red;
 }
 
-/*             Vdeo part */
+/*           Tailer main  Vdeo part */
 .post-video{
     position: relative;
 }
@@ -270,6 +270,9 @@ a svg:hover{
 
 
 /*                    Heading for all box Start*/
+.more-trailer-box a{
+    color: black;
+}
 .heading-text{
     color: black;
  }
@@ -313,25 +316,23 @@ a svg:hover{
 /*                       more trailor box         */
 
 
+.videoPart{
+    position: relative;
+    /* margin: 0rem 2rem; */
+}
 
-.more-trailer-box{
+.more-trailer-video{
     /* border: 2px solid red; */
 
 }
-.more-trailer-box a{
-    color: black;
 
-}
-.left-part-video{
-    /* border: 2px solid rgb(32, 16, 16); */
-    margin: 0rem 1rem;
-
-
+.more-trailer-video a:hover{
+    color: #79D70F;
 }
 .more-trailer-video{
     position: relative;
     overflow: hidden;
-    margin: 0rem 2rem;
+    margin: 0rem 4rem;
 
 }
 .carsoul-video{
@@ -496,6 +497,7 @@ a svg:hover{
 /*                   Editional List start */
 .editional-list{
     /* border: 1px solid black; */
+    position: relative;
 }
 .movie-item{
     /* border: 1px solid black; */
@@ -543,4 +545,10 @@ a svg:hover{
 }
 .creat-a-list:hover svg{
     color: black !important;
+}
+.UserList{
+    position: relative;
+}
+.UserPolls{
+    position: relative;
 }
