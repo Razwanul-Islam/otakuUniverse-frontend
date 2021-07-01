@@ -44,6 +44,10 @@ body{
     margin: 1px;
     border-radius: 7px;
 }
+/* responsive */
+.resp-rating{
+    display: none;
+}
 .my-ratting:hover{
     background-color: #AA3A3A;
 }
@@ -277,6 +281,9 @@ a svg:hover{
     background-color: rgb(255, 255, 255);
 }
 /* fot responsive top-creadit */
+.top-creadit{
+    display: none;
+}
 .top-creadit a{
 }
 .my-text-detals{

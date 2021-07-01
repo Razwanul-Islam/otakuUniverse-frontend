@@ -5,6 +5,9 @@
     .my-sm-ratting{
         display: none;
     }
+    .resp-rating{
+        display: flex;
+    }
 
     .sub-nav {
         padding: 0rem .5rem;
@@ -33,6 +36,9 @@
     }
     .my-ratting {
         width: 105px;
+    }
+    .top-creadit{
+        display: block;
     }
     
 }
