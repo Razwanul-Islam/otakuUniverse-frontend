@@ -380,7 +380,8 @@
 
         <section class=" more-trailer-box row mx-4">
 
-            <div class="left-part-video col-8">
+            <div class="left-part-video col-lg-8">
+
                 <div class="videoPart">
                     <div class="heading-text">
                         <a href="#" class="">
@@ -390,9 +391,14 @@
                     </div>
 
                     <div class="more-trailer-video">
+                       
 
                         <div class="carsoul-video">
 
+                            <span onclick="prev()" class="video-icon-left">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+
                             <div class="box-1">
 
                                 <a class="more-trailer-link" href="#">
@@ -415,52 +421,7 @@
                                 <a href="#" class="trailer-a fs-7"> International Trailer </a>
 
                             </div>
-                            <div class="box-1">
-
-                                <a class="more-trailer-link" href="#">
-                                    <video class="video-1" src="./Image/video2.mp4" muted></video>
-
-                                    <div class="play-btn-small">
-                                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path
-                                                d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
-                                            </path>
-                                            <path
-                                                d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z">
-                                            </path>
-                                        </svg>
-                                        <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
-                                    </div>
-
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
-
-                            </div>
-                            <div class="box-1">
-
-                                <a class="more-trailer-link" href="#">
-                                    <video class="video-1" src="./Image/video2.mp4" muted></video>
-
-                                    <div class="play-btn-small">
-                                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path
-                                                d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
-                                            </path>
-                                            <path
-                                                d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z">
-                                            </path>
-                                        </svg>
-                                        <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
-                                    </div>
-
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
-
-                            </div>
+                            
                             <div class="box-1">
 
                                 <a class="more-trailer-link" href="#">
@@ -485,22 +446,63 @@
 
                             </div>
                         
+                            <div class="box-1">
+
+                                <a class="more-trailer-link" href="#">
+                                    <video class="video-1" src="./Image/video2.mp4" muted></video>
+
+                                    <div class="play-btn-small">
+                                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path
+                                                d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
+                                            </path>
+                                            <path
+                                                d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z">
+                                            </path>
+                                        </svg>
+                                        <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+
+                            </div>
+                            <div class="box-1">
+
+                                <a class="more-trailer-link" href="#">
+                                    <video class="video-1" src="./Image/video2.mp4" muted></video>
+
+                                    <div class="play-btn-small">
+                                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path
+                                                d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
+                                            </path>
+                                            <path
+                                                d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z">
+                                            </path>
+                                        </svg>
+                                        <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+
+                            </div>
+
+                            <span onclick="next()" class="video-icon-right">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
 
                         </div>
 
-
+                    
 
                     </div>
-                    <div class="iconPart">
-                        <span onclick="prev()" class="side-icon-left">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-
-                        <span onclick="next()" class="side-icon-right">
-                            <i class="fas fa-chevron-right"></i>
-                        </span>
-                    </div>
-
+                 
 
                 </div>
 
@@ -566,7 +568,7 @@
                                 </span></p>
                         </a>
                     </div>
-                    <div class="row container">
+                    <div class="row max-width">
                         <div class="col-6 artist-list">
 
                             <div class="artist">
@@ -688,7 +690,7 @@
             </div>
 
             <!--                                     Right part start -->
-            <div class="col-4 right-part-moreExp">
+            <div class="col-lg-4 right-part-moreExp">
 
                 <div class="heading-text">
 

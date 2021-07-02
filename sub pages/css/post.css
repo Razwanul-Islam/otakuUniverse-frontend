@@ -15,6 +15,10 @@ body{
     padding: 0 1rem;
     color: white;
   }
+  .max-width{
+      max-width: 728px;
+      margin-left: 3rem;
+  }
 
 /* Utility class start */
 .fs-8{
@@ -376,12 +380,30 @@ a svg:hover{
     padding-bottom: 3rem;
     /* border: 2px solid red; */
 }
+.video-icon-right,
+.video-icon-left
+{
+    color: rgb(255, 245, 245);
+    position: absolute;
+    top: 42%;
+    vertical-align: middle;
+    font-size: 2rem;
+    z-index: 3;
+    padding: 0px 6px;
+    background-color: #79D70F;
+    border-radius: 2px;
+}
+.video-icon-left{
+    left: 51%;
+}
+.video-icon-right{
+    right: 51%;
+}
 .more-trailer-video a:hover{
     color: #79D70F;
 }
 .carsoul-video{
     /* border: 2px solid blue; */
-    /* margin: 0px 40px; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap !important;
@@ -436,19 +458,24 @@ a svg:hover{
     color: black;
     border-bottom: 1px solid black;
 }
-.side-icon-right{
-    color: black;
+.side-icon-right,
+.side-icon-left{
+    color: rgb(255, 245, 245);
     position: absolute;
-    top: 132px;
-    right: 18px;
+    top: 51%;
     font-size: 2rem;
+    z-index: 3;
+    padding: 0px 6px;
+    background-color: #79D70F;
+    border-radius: 2px;
 }
 .side-icon-left{
-    color: black;
-    position: absolute;
-    top: 132px;
-    left: 18px;
-    font-size: 2rem;
+    left: 4%;
+
+}
+.side-icon-right{
+    right: 4%;
+
 }
 /*                                Img  Part   */
 .ImgPart{
@@ -475,15 +502,15 @@ a svg:hover{
 }
 
 .artist{
-    /* border: 1px solid rgb(60, 56, 56); */
-    padding: .4rem;
-
+   
 }
 .artist-1{
     position: relative;
     height: 100%;
     width: 100%;
     display: flex;
+    margin: 1rem;
+
 
 }
 .artist-1 p{
@@ -516,6 +543,8 @@ a svg:hover{
 /*                        right-part-moreExp                  */
 .right-part-moreExp{
     /* border: 2px solid red; */
+    padding: 0rem 3rem;
+
 
 }
 .list-image{
@@ -548,7 +577,7 @@ a svg:hover{
 }
 
 
-/*                   Editional List start */
+/*                   Editional List start             */
 .editional-list{
     /* border: 1px solid black; */
     position: relative;

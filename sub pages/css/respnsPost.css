@@ -40,5 +40,9 @@
     .top-creadit{
         display: block;
     }
+
+    .right-part-moreExp{
+        display: none;
+    }
     
 }
