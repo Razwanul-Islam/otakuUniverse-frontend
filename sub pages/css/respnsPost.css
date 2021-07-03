@@ -1,0 +1,48 @@
+@media (max-width: 990px) {
+    .nav{
+        display: none;
+    }
+    .my-sm-ratting{
+        display: none;
+    }
+    .resp-rating{
+        display: flex;
+    }
+
+    .sub-nav {
+        padding: 0rem .5rem;
+    }
+
+   .sub-nav .my-nav-ul{
+        display: none;
+    }
+
+    .post-more{
+        display: flex;
+    
+    }
+    .post-more-box{
+       
+        height: 50px;
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+    .post-more-box p{
+       display: inline;
+    }
+
+    .my-text-detals{
+        display: none;
+    }
+    .my-ratting {
+        width: 105px;
+    }
+    .top-creadit{
+        display: block;
+    }
+
+    .right-part-moreExp{
+        display: none;
+    }
+    
+}
