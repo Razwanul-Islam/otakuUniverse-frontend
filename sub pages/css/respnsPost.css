@@ -45,4 +45,29 @@
         display: none;
     }
     
+
+    .artist{
+        display: flex;
+   
+    }
+    .max-width{
+     margin-left: 0rem;
+
+    }
+    .artist-1 img{
+        width: 150px;
+        clip-path: circle();
+        height: 113px;
+    
+    }
+    .artist-1 {
+        display: block;
+        margin: 0.2rem;
+    }
+    
+    .artist-1 p{
+       padding: 0px;
+       text-align: center;
+    }
+    
 }

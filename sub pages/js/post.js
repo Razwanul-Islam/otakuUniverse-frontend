@@ -4,7 +4,8 @@ function next(){
     // alert("clicked");
     // video.src = "./Image/video2.mp4";
     // myVideo.style.backgroundColor = "red";
-    myVideo.style.left = "-100%";
+      var a=-100;
+    myVideo.style.left = a + "%";
 }
 function prev(){
     // alert("clicked");
@@ -62,5 +63,45 @@ function prevImg(){
   
     
 }
+
+
+// var first =0;
+
+// let next = document.querySelector(".img-container");
+// let prev = document.querySelector(".img-container");
+
+
+// document.querySelector(".btnNext").addEventListener("click", function(){
+  // alert("click");
+  // next.classList.add("first");
+    // next.classList.add("first");
+//     first= first-50;
+//     if(first > -200){
+//       next.style.left =first + "%";
+//     }
+//     else{
+//       first=-150;
+
+//       next.style.left =first + "%";
+
+
+//     }
+// });
+
+// document.querySelector(".btnPrev").addEventListener("click", function(){
+//   first= first+50;
+//   if(first <= 0){
+//     next.style.left =first + "%";
+//   }
+//   else{
+//     first=0;
+
+//     next.style.left =first + "%";
+
+
+//   }
+// });
+
+
 
 
