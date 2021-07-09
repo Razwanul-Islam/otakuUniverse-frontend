@@ -25,7 +25,7 @@ body{
 }
 
 
-/* Utility class start */
+/*                             Utility class start */
 .fs-8{
     font-size: .8rem;
 }
@@ -35,7 +35,25 @@ body{
 .bdr-bottom:hover{
     border-bottom: 1px solid rgba(255, 255, 255, 0.735);
 }
-/* Utility class end */
+.my-a:hover{
+    text-decoration: underline;
+}
+.a-green{
+    color: #0a58ca !important;
+
+
+}
+a{
+    text-decoration: none;
+    color: #EDF4F2;
+}
+a:hover{
+    color: #79D70F;
+}
+a svg:hover{
+    color: #79D70F;
+}
+/*                         Utility class end */
 
 /*                    My-heading start */
 
@@ -63,19 +81,7 @@ body{
 .rating-numb p{
     font-size: .8rem;
 }
-.my-a:hover{
-    text-decoration: underline;
-}
-a{
-    text-decoration: none;
-    color: #EDF4F2;
-}
-a:hover{
-    color: #79D70F;
-}
-a svg:hover{
-    color: #79D70F;
-}
+
 
 /*                                     SubNAv start here                */
 .sub-nav{
@@ -224,7 +230,6 @@ a svg:hover{
     position: relative;
     z-index: 10;
 }
-
 .three-dot-icon::after{
     content: '';
     position: absolute;
@@ -251,8 +256,20 @@ a svg:hover{
     z-index: 5;
 
 }
+.previews{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    z-index:35;
+    right: 0;
+    top: 34px;
+    display: none;
+}
 
-/*                      Right Post more box                        */
+/*                            Right Post more box                        */
 .my-svg{
     margin-top: 30px;
 }
@@ -276,6 +293,7 @@ a svg:hover{
    
  
 }
+
 /*                                         Detals              */
 .detals{
     background-color: #D32626;
@@ -294,7 +312,7 @@ a svg:hover{
 }
 .my-btn:hover{
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.158);
 }
 /* fot responsive top-creadit */
 .top-creadit{
@@ -336,6 +354,7 @@ a svg:hover{
 
 
 
+
 /*                    Heading for all box Start*/
 
 .more-trailer-box a{
@@ -344,7 +363,7 @@ a svg:hover{
 .heading-text{
     color: black;
  }
-.heading-text:hover svg{
+.heading-text a:hover svg{
     color: #79D70F;
  }
  .heading-text a{
@@ -426,10 +445,7 @@ a svg:hover{
   
 }
 .box-1{
-
     width: 25%;
- 
-   
 }
 .more-trailer-link{
     padding: 5px 7px;
@@ -554,6 +570,228 @@ a svg:hover{
     text-decoration: underline;
 
 }
+/*                                       Sugg box start */
+.svg-right{
+    float: right;
+    margin: 1rem 5rem;
+}
+.svg-right:hover{
+    background-color: rgba(15, 13, 13, 0.048);
+    border-radius: 5px;
+    color: #79D70F;
+}
+.suggest-box{
+    overflow: hidden;
+}
+.carsoul-suggest{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: relative;
+    width: 250%;
+    transition: all ease 1s .1s;
+}
+.sugg-box-1{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.568);
+    position: relative;
+    z-index: 1;
+    /* max-width: 550px; */
+    /* height: 100%; */
+    width: 15%;
+    margin: 5px;
+}
+.sugg-icon-right,
+.sugg-icon-left
+{
+    color: rgb(255, 245, 245);
+    position: relative;
+    top: 42%;
+    vertical-align: middle;
+    font-size: 2rem;
+    z-index: 3;
+    padding: 0px 6px;
+    background-color: #79D70F;
+    border-radius: 2px;
+}
+.sugg-icon-left{
+    left: 1%;
+    top: 220px;
+   
+}
+
+.sugg-icon-right{
+    left: 95%;
+    bottom: 292px;
+}
+
+
+.sugg-icon{
+    position: absolute;
+    color: white;
+    z-index: 4;
+    top: 0;
+    left: 2px;
+}
+.sugg-icon:hover{
+    opacity: .7;
+    
+}
+.ipc-back{
+    color: rgb(175, 175, 175);
+    z-index: 3;
+
+}
+.ipc-hover{
+    color: white;
+    background-color: white;
+}
+.sugg-image{
+    position: relative;
+    
+}
+.sugg-image:hover .overly{
+    background-color: rgba(15, 14, 14, 0.11);
+    
+}
+.sugg-image-img{
+    width: 100%;
+    height: 90%;
+    
+}
+.ratting-box{
+    /* border: 2px solid red; */
+
+}
+.sugg-ratting{
+    margin: .5rem 1.2rem;
+
+
+}
+.ipc-bloc-star{
+    /* color: #05ec34; */
+}
+.ipc-star{
+    margin-left: 2rem;
+    /* color: transparent; */
+    /* background-color: white; */
+
+}
+.ipc-star:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    
+
+}
+.sugg-name{
+    margin: 1rem 1.2rem;
+
+}
+.sugg-watchlist{
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 7px;
+    padding: .3rem 2.5rem;
+    margin: .5rem 1.2rem;
+}
+.sugg-watchlist:hover{
+    background-color: rgba(8, 8, 8, 0.158);
+
+}
+/*                 STORYLINE START */
+.my-btn-grup-1{
+    /* background-color: #05ec34; */
+}
+.my-btn-grup-1 .my-btn{
+    border-radius: 20px;
+    color: #000000;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.233);
+    margin: 0px 7px;
+    padding: 6px 12px;
+}
+/*                       Reviews  */
+.reviews-box{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.603);
+    padding: 1rem;
+}
+.icon-like{
+    padding: .5rem;
+  position: relative;
+}
+.svg-like::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: circle();
+    left: -49px;
+    top: 3px;
+  }
+.icon-like:hover .svg-like::before{
+    background-color: rgba(0, 0, 0, 0.096);
+}
+.icon-dislike{
+    position: relative;
+    padding: .5rem;
+}
+.svg-dislike::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    clip-path: circle();
+    left: 0px;
+    top: 1px;
+}
+.icon-dislike:hover .svg-dislike::before{
+    background-color: rgba(0, 0, 0, 0.096);
+}
+.sheir-icon{
+    position:relative;
+    top: 2px !important
+}
+.i-dot{
+    clip-path: circle();
+    padding: 1rem;   
+}
+.i-dot:hover{
+    background-color: rgba(0, 0, 0, 0.096); 
+}
+
+/*           Socal list */
+.socal-icon-list{
+    position: absolute;
+    right: 75px;
+    display: none;
+    transition: all ease 1s .1s;
+
+}
+.socal-icon-list ul{
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5px;
+
+
+}
+.socal-icon-list ul li{
+    border: 1px solid;
+
+
+}
+.socal-icon-list ul li span{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+
+.socal-icon-list ul li:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+
+}
+
+
+
+
+
+
 
 /*                        right-part-moreExp                  */
 .right-part-moreExp{

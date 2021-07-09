@@ -5,6 +5,9 @@
     .my-sm-ratting{
         display: none;
     }
+    .my-svg{
+        margin-top: 0px;
+    }
     .resp-rating{
         display: flex;
     }
