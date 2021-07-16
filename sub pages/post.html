@@ -8,7 +8,9 @@
     <title>otakuUniverse</title>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/sub pages/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    
+    <link rel="stylesheet" href="./css/My_utility.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="./css/post.css">
     <link rel="stylesheet" href="./css/respnsPost.css">
@@ -22,7 +24,7 @@
             <span>
                 <!-- Span for nav links -->
                 <ul class="nav-links">
-                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="../index.html">Home</a></li>
                     <li class="item"><a href="./sub pages/post.html">Anime</a></li>
                     <li class="item"><a href="#">Manga</a></li>
                     <form action="/search" class="search-form" method="post">
@@ -41,15 +43,15 @@
         </nav>
 
         <div class="my-heading row">
-            <div class="col-lg-7 col-sm-12 bg-red text-white px-4">
+            <div class="col-lg-7 col-sm-12 px-4">
                 <h2 class="h2">Raya and the Last Dragon</h2>
                 <p class="fs-7 m-0"><a href="#" class="year">2021</a> <span class="">.</span> <a href="#"
-                        class="ty">PG</a>
+                        class="">PG</a>
                     <span class="">.</span> <a href="#" class="time">1h 45min</a>
                 </p>
 
             </div>
-            <div class="col-5 my-sm-ratting row m-0">
+            <div class="col-lg-5  my-sm-ratting row m-0">
                 <div class="box col-4 m-0">
                     <h7 class="h7 m-0">IMDb RATING</h7>
                     <a href="#" class="d-flex my-ratting">
@@ -74,7 +76,7 @@
                 <div class="box col-4 m-0">
                     <h7 class="h7 m-0">YOUR RATING</h7>
                     <a href="#" class="d-flex my-ratting">
-                        <div class="svg-str text-center py-2 p-1">
+                        <div class="svg-str p-1 pt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="ipc-icon ipc-icon--star-border UserRatingButton__UnratedIcon-sc-15ploje-4 bncTjW rating-button--blue"
                                 viewBox="0 0 24 24" fill="currentColor" role="presentation">
@@ -85,7 +87,7 @@
                             </svg>
                         </div>
 
-                        <div class="rating-numb  py-2 p-1">
+                        <div class="rating-numb p-1 pt-2">
                             RATE
                         </div>
                     </a>
@@ -110,7 +112,7 @@
                 </div>
             </div>
         </div>
-
+<!-- Section Sub Nav start -->
         <section>
             <nav class="sub-nav">
 
@@ -120,38 +122,68 @@
                     <li class=""><a href="#" class=""> Trivia</a>.</li>
                     <li class=""><a href="#" class="">IMDbPro</a></li>
                 </ul>
-                <button type="button" class="btn my-btn py-0 px-2">
+                <button type="button" class="post-btn fs-6">
                     <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"
-                        class="ipc-icon ipc-icon--categories ipc-responsive-button__icon" viewBox="0 0 24 24"
-                        fill="currentColor" role="presentation">
+                        class="" viewBox="0 0 24 24" fill="currentColor" role="presentation">
                         <path
                             d="M12.036 17.153a4.579 4.579 0 0 1 5.117-5.117c1.97.239 3.604 1.802 3.935 3.758a4.576 4.576 0 0 1-1.042 3.76l.197.19h.556L22.5 21.5a.743.743 0 0 1 0 1.049.743.743 0 0 1-1.049 0l-1.708-1.75v-.556l-.19-.197a4.576 4.576 0 0 1-3.759 1.042c-1.956-.331-3.519-1.964-3.758-3.935zm4.54-3.745a3.163 3.163 0 0 0-3.168 3.168 3.163 3.163 0 0 0 3.168 3.167 3.163 3.163 0 0 0 3.167-3.167 3.163 3.163 0 0 0-3.167-3.168zM8.298 11.972c1.47 0 2.73 1.26 2.73 2.73v3.464c0 1.574-1.26 2.834-2.73 2.834H4.834A2.822 2.822 0 0 1 2 18.166v-3.464c0-1.47 1.26-2.73 2.73-2.73h3.568zm0 1.47H4.834c-.735 0-1.26.525-1.26 1.26v3.464c0 .735.525 1.26 1.26 1.26h3.464c.735 0 1.26-.525 1.26-1.26v-3.464c0-.63-.525-1.26-1.26-1.26zM8.298 2c1.47 0 2.73 1.26 2.73 2.73v3.463c0 1.575-1.26 2.73-2.73 2.73H4.834C3.26 10.923 2 9.768 2 8.193V4.73C2 3.26 3.26 2 4.73 2h3.568zm0 1.47H4.834c-.735 0-1.26.524-1.26 1.26v3.463c0 .735.525 1.26 1.26 1.26h3.464c.735 0 1.26-.525 1.26-1.26V4.73c0-.735-.525-1.26-1.26-1.26zM18.27 2C19.74 2 21 3.26 21 4.73v3.463c0 1.575-1.155 2.73-2.73 2.73h-3.463c-1.47 0-2.73-1.26-2.73-2.73V4.73c0-1.47 1.26-2.729 2.73-2.729h3.464zm0 1.47h-3.463c-.735 0-1.26.524-1.26 1.26v3.463c0 .735.525 1.26 1.26 1.26h3.464c.735 0 1.26-.525 1.26-1.26V4.73c0-.735-.525-1.26-1.26-1.26z">
                         </path>
                     </svg>
-                    All topics </button>
-                <a href="#" class="sheir-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="ipc-icon ipc-icon--share"
+                  <span class=""> All topics </span> 
+                </button>
+                <span class="sheir-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" class=""
                         viewBox="0 0 24 24" fill="currentColor" role="presentation">
                         <path fill="none" d="M0 0h24v24H0V0z"></path>
                         <path
                             d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z">
                         </path>
                     </svg>
-                </a>
+                </span>
+                <div class="socal-icon-list subNav-socal-icon-list top-">
+                    <ul class="">
+                        <li><a href="#">
+                            <i class="fs-4 fab fa-facebook-square"></i>
+                            <span>Facebook</span>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fs-4  fab fa-twitter"></i>
+                            <span>twiter</span>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fs-4 far fa-envelope"></i>
+                            <span>Email link</span>
+                        </a></li>
+                       
+                        <li><a href="#">
+                            <i class="fs-4 fas fa-paperclip"></i>
+                            <span>coppy link</span>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fs-4 fab fa-font-awesome-flag"></i>
+                            <span>Report</span>
+                        </a></li>
+
+                       
+                    </ul>
+                </div>
+
             </nav>
         </section>
+<!-- Section Sub Nav start -->
+
         <!-- Single post section start -->
 
-        <section class=" specific-post px-4">
-            <div class="row mx-4">
-                <div class="col-lg-3 col-sm-4 p-1 px-0 post-img">
+        <section class=" specific-post px-4 px-sm-0">
+            <div class="row mx-4 mx-sm-1">
+                <div class="col-lg-3 col-sm-4 col-2 p-1 px-0 post-img">
                     <div class="post-img-box">
                         <img src="./Image/image1.png" alt="" class="single-img">
 
                         <div class="overly"></div>
-                        <div class="po">
-                            <div class="icon-back position-absolute top-0 start-0">
-                                <svg class="ipc-watchlist-ribbon__bg" width="26px" height="40px" viewBox="0 0 24 34"
+                        <div class="my-position">
+                            <div class="icon-back">
+                                <svg class="" width="30px" height="50px" viewBox="0 0 24 34"
                                     xmlns="http://www.w3.org/2000/svg" role="presentation">
                                     <polygon class="ipc-watchlist-ribbon__bg-ribbon" fill="#000000"
                                         points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
@@ -163,9 +195,9 @@
                                 </svg>
 
                             </div>
-                            <div class="text-white text-font position-absolute top-0 start-0">
+                            <div class="icon-font">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    class="ipc-icon ipc-icon--add ipc-icon--inline" viewBox="0 0 24 24"
+                                    class="" viewBox="0 0 24 24"
                                     fill="currentColor" role="presentation">
                                     <path fill="none" d="M0 0h24v24H0V0z"></path>
                                     <path
@@ -179,9 +211,8 @@
 
                     </div>
                 </div>
-                <div class="col-lg-7 col-sm-8 p-1 post-video ">
+                <div class="col-lg-7 col-sm-8 p-1  post-video ">
                     <div class="post-video-box">
-
                         <div class="overly"></div>
                         <div class="three-dot text-white previews-click position-relative">
                             <div class="three-dot-icon">
@@ -197,7 +228,6 @@
                               
                               </div> 
                         </div>
-
                         <div class="play text-white">
                             <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 24 24"
                                 fill="currentColor" role="presentation">
@@ -246,19 +276,19 @@
         <!-- Single post section End -->
 
         <section class="detals ">
-            <div class="row mx-4">
-                <div class="col-lg-8">
+            <div class="row mx-4 mx-sm-0 p-sm-0">
+                <div class="col-lg-8 col-sm-12 mx-sm-0 p-sm-0 ">
                     <div class="my-btn-grup">
-                        <a href="#" class="btn my-btn"> Animation</a>
-                        <a href="#" class="btn my-btn"> Action</a>
-                        <a href="#" class="btn my-btn"> Adventur</a>
+                        <a href="#" class="my-btn"> Animation</a>
+                        <a href="#" class="my-btn"> Action</a>
+                        <a href="#" class="my-btn"> Adventur</a>
                     </div>
 
 
-                    <div class="col-sm-7 resp-rating row m-0">
-                        <div class="box col-4 m-0">
+                    <div class="col-sm-7 resp-rating row m-0 p-0">
+                        <div class="box col-4 m-0 p-0">
                             <a href="#" class="d-flex my-ratting">
-                                <div class="svg-str py-2 p-0">
+                                <div class="svg-str py-2 p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         class="ipc-icon ipc-icon--star AggregateRatingButton__RatingIcon-sc-1il8omz-4 gijLmY"
                                         viewBox="0 0 24 24" fill="currentColor" role="presentation">
@@ -266,13 +296,17 @@
                                             d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                         </path>
                                     </svg>
-                                    <h7 class="text-white">7.4 <span class="text-white-50">/10 .87</span>
+                                </div>
+        
+                                <div class="rating-numb">
+                                    <h7 class="text-white">7.4 <span class="text-white-50">/10</span>
+                                        <p class="text-white-50 ">81K</p>
+        
                                     </h7>
                                 </div>
-
                             </a>
                         </div>
-                        <div class="box col-4 m-0">
+                        <div class="box col-4 m-0 p-0">
                             <a href="#" class="d-flex my-ratting">
                                 <div class="svg-str text-center py-2 p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -290,7 +324,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="box col-4 m-0">
+                        <div class="box col-4 m-0 p-0">
                             <a href="#" class="d-flex my-ratting">
                                 <div class="svg-str text-center py-2 p-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -371,18 +405,20 @@
                         <div class="Watchlist-top">
                             <p class="m-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
+                                    class=""
                                     viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                     <path fill="none" d="M0 0h24v24H0V0z"></path>
                                     <path
                                         d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
                                     </path>
                                 </svg>
+                              <span>
                                 Add to Watchlist
+                              </span> 
                             </p>
                             <span class="arrow-bottom">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    class="ipc-icon ipc-icon--arrow ipc-btn__icon" viewBox="0 0 24 24"
+                                    class="" viewBox="0 0 24 24"
                                     fill="currentColor" role="presentation">
                                     <path opacity=".87" fill="none" d="M24 24H0V0h24v24z"></path>
                                     <path
@@ -407,36 +443,40 @@
 
 
 
-        <section class=" more-trailer-box row mx-4 ">
+        <section class=" more-trailer-box row mx-4 mx-sm-0 ">
             <!--                                    LEFT PARt Start -->
 
-            <div class="left-part-video col-lg-8">
+            <div class="left-part-video col-lg-8 ">
 
                 <div class="videoPart">
                     <div class="heading-text">
-                        <a href="#" class="">
+                        <a href="#" class="ps-2">
                             <p class="heading-text-p"> VIDEOS <span class="fs-7 text-center degit">17</span> <span
                                     class="icon"><i class="fas fa-chevron-right"></i> </span></p>
                         </a>
                     </div>
 
-                    <div class="more-trailer-video">
+                    <div class="more-trailer-video mx-sm-0 ">
+                        <span onclick="prev()" class="video-icon-left">
+                            <i class="fas fa-chevron-left"></i>
 
+                        </span>
+                        <span onclick="next()" class="video-icon-right">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
 
                         <div class="carsoul-video">
 
-                            <span onclick="prev()" class="video-icon-left">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
+                          
 
                             <div class="box-1">
 
-                                <a class="more-trailer-link" href="#">
+                                <div class="more-trailer-link" href="#">
                                     <video class="video-1" src="./Image/video2.mp4" muted></video>
 
-                                    <div class="play-btn-small">
+                                    <div class=" play text-white">
                                         <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            class=""
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path
                                                 d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
@@ -447,19 +487,19 @@
                                         </svg>
                                         <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+                                </div>
+                                <a href="#" class="text-dark fs-7"> International Trailer </a>
 
                             </div>
-                            
+
                             <div class="box-1">
 
-                                <a class="more-trailer-link" href="#">
+                                <div class="more-trailer-link" href="#">
                                     <video class="video-1" src="./Image/video2.mp4" muted></video>
 
-                                    <div class="play-btn-small">
+                                    <div class=" play text-white">
                                         <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            class=""
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path
                                                 d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
@@ -470,20 +510,19 @@
                                         </svg>
                                         <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
                                     </div>
-
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+                                </div>
+                                <a href="#" class="text-dark fs-7"> International Trailer </a>
 
                             </div>
 
                             <div class="box-1">
 
-                                <a class="more-trailer-link" href="#">
+                                <div class="more-trailer-link" href="#">
                                     <video class="video-1" src="./Image/video2.mp4" muted></video>
 
-                                    <div class="play-btn-small">
+                                    <div class=" play text-white">
                                         <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            class=""
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path
                                                 d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
@@ -494,19 +533,19 @@
                                         </svg>
                                         <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
                                     </div>
-
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+                                </div>
+                                <a href="#" class="text-dark fs-7"> International Trailer </a>
 
                             </div>
+
                             <div class="box-1">
 
-                                <a class="more-trailer-link" href="#">
+                                <div class="more-trailer-link" href="#">
                                     <video class="video-1" src="./Image/video2.mp4" muted></video>
 
-                                    <div class="play-btn-small">
+                                    <div class=" play text-white">
                                         <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
-                                            class="ipc-icon ipc-icon--play-circle-outline-large-inline ipc-icon--inline ipc-lockup-overlay__icon"
+                                            class=""
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path
                                                 d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
@@ -517,17 +556,42 @@
                                         </svg>
                                         <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
                                     </div>
-
-                                </a>
-                                <a href="#" class="trailer-a fs-7"> International Trailer </a>
+                                </div>
+                                <a href="#" class="text-dark fs-7"> International Trailer </a>
 
                             </div>
 
-                            <span onclick="next()" class="video-icon-right">
-                                <i class="fas fa-chevron-right"></i>
-                            </span>
+                            <div class="box-1">
+
+                                <div class="more-trailer-link" href="#">
+                                    <video class="video-1" src="./Image/video2.mp4" muted></video>
+
+                                    <div class=" play text-white">
+                                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg"
+                                            class=""
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path
+                                                d="M10.803 15.932l4.688-3.513a.498.498 0 0 0 0-.803l-4.688-3.514a.502.502 0 0 0-.803.402v7.026c0 .412.472.653.803.402z">
+                                            </path>
+                                            <path
+                                                d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-1c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11z">
+                                            </path>
+                                        </svg>
+                                        <p class="fs-6 mx-2">Play trailer <span class="time fs-8">2:25</span></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-dark fs-7"> International Trailer </a>
+
+                            </div>
+
+                   
+
+                         
+
+                          
 
                         </div>
+                      
 
 
 
@@ -541,7 +605,7 @@
 
                     <div class="heading-text">
 
-                        <a href="#" class="">
+                        <a href="#" class="ps-2">
                             <p class="heading-text-p"> PHOTOS <span class="fs-7 text-center degit">99+</span> <span
                                     class="icon"><i class="fas fa-chevron-right"></i> </span></p>
                         </a>
@@ -553,6 +617,23 @@
                         <div id="sliderImg">
 
 
+                            <a href="#">
+
+                                <img class="img-1" src="./Image/image 4.png" alt="">
+
+                            </a>
+                            <a href="#">
+
+                                <img class="img-2" src="./Image/image 2.png" alt="">
+                            </a>
+                            <a href="#">
+
+                                <img class="img-2" src="./Image/image 2.png" alt="">
+                            </a>
+                            <a href="#">
+
+                                <img class="img-2" src="./Image/image 2.png" alt="">
+                            </a>
                             <a href="#">
 
                                 <img class="img-1" src="./Image/image 4.png" alt="">
@@ -593,7 +674,7 @@
 
                     <div class="heading-text my-2">
 
-                        <a href="#" class="">
+                        <a href="#" class="ps-2">
                             <p class="heading-text-p"> TOP Cast <span class="icon"><i class="fas fa-chevron-right"></i>
                                 </span></p>
                         </a>
@@ -611,8 +692,8 @@
                         </a>
 
                     </div>
-                    <div class="row max-width">
-                        <div class="col-lg-6 artist-list">
+                    <div class="row max-width ">
+                        <div class="col-lg-6 artist-list px-sm-0">
 
                             <div class="artist">
                                 <div class="artist-1">
@@ -649,7 +730,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-6 artist-list">
+                        <div class="col-lg-6 artist-list px-sm-0">
 
                             <div class=" artist">
 
@@ -732,7 +813,7 @@
 
                 <div class="Supggest-Box">
                     <div class="heading-text">
-                        <a href="#" class="">
+                        <a href="#" class="ps-2">
                             <p class="heading-text-p"> More like this <span class="icon">
                                     <i class="fas fa-chevron-right"></i> </span></p>
                         </a>
@@ -750,9 +831,16 @@
                     </div>
 
                     <div class="suggest-box">
-                        <span class="sugg-icon-left">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
+                        
+                        <div class="sugg-icon-part">
+                            <span class="sugg-icon-left">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="sugg-icon-right">
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </div>
+                        
 
                         <div class="carsoul-suggest">
 
@@ -793,7 +881,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -805,208 +893,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
-                                    </a>
-                                </div>
-
-                                <div class="sugg-watchlist">
-                                    <a class="m-0 text-dark">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                        Watchlist
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="sugg-box-1">
-
-                                <div class="sugg-icon">
-                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
-                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
-
-                                        <polygon class="ipc-back"
-                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
-                                        <polygon class="ipc-hover"
-                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
-                                        </polygon>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
-                                    <div class="overly"></div>
-                                </div>
-
-                                <a class="ratting-box text-dark">
-
-                                    <div class="sugg-ratting">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path
-                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
-                                            </path>
-                                        </svg>
-                                        7.4
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <div class="sugg-name">
-                                    <a class="text-dark my-a">
-                                        Luca
-                                    </a>
-                                </div>
-
-                                <div class="sugg-watchlist">
-                                    <a class="m-0 text-dark">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                        Watchlist
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="sugg-box-1">
-
-                                <div class="sugg-icon">
-                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
-                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
-
-                                        <polygon class="ipc-back"
-                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
-                                        <polygon class="ipc-hover"
-                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
-                                        </polygon>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
-                                    <div class="overly"></div>
-                                </div>
-
-                                <a class="ratting-box text-dark">
-
-                                    <div class="sugg-ratting">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path
-                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
-                                            </path>
-                                        </svg>
-                                        7.4
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <div class="sugg-name">
-                                    <a class="text-dark my-a">
-                                        Luca
-                                    </a>
-                                </div>
-
-                                <div class="sugg-watchlist">
-                                    <a class="m-0 text-dark">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                        Watchlist
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div class="sugg-box-1">
-
-                                <div class="sugg-icon">
-                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
-                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
-
-                                        <polygon class="ipc-back"
-                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
-                                        <polygon class="ipc-hover"
-                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
-                                        </polygon>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
-                                            </path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
-                                    <div class="overly"></div>
-                                </div>
-
-                                <a class="ratting-box text-dark">
-
-                                    <div class="sugg-ratting">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
-                                            role="presentation">
-                                            <path
-                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
-                                            </path>
-                                        </svg>
-                                        7.4
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
-                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
-                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                            <path
-                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <div class="sugg-name">
-                                    <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1061,7 +948,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1073,7 +960,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1128,7 +1015,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1140,7 +1027,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1181,7 +1068,7 @@
                                     </svg>
                                 </div>
                                 <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
                                     <div class="overly"></div>
                                 </div>
 
@@ -1195,7 +1082,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1207,7 +1094,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1248,7 +1135,7 @@
                                     </svg>
                                 </div>
                                 <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
                                     <div class="overly"></div>
                                 </div>
 
@@ -1262,7 +1149,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1274,7 +1161,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1315,7 +1202,7 @@
                                     </svg>
                                 </div>
                                 <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
                                     <div class="overly"></div>
                                 </div>
 
@@ -1329,7 +1216,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1341,7 +1228,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1382,7 +1269,7 @@
                                     </svg>
                                 </div>
                                 <div class="sugg-image">
-                                    <img class="sugg-image-img" src="./Image/image 2.png" alt="">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
                                     <div class="overly"></div>
                                 </div>
 
@@ -1396,7 +1283,7 @@
                                                 d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
                                             </path>
                                         </svg>
-                                        7.4
+                                        <span>7.4</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
                                             viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                             <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1408,7 +1295,7 @@
                                 </a>
                                 <div class="sugg-name">
                                     <a class="text-dark my-a">
-                                        Luca
+                                        <span>Luca</span>
                                     </a>
                                 </div>
 
@@ -1427,17 +1314,212 @@
                                 </div>
 
                             </div>
+                            <div class="sugg-box-1">
 
+                                <div class="sugg-icon">
+                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
+                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
 
+                                        <polygon class="ipc-back"
+                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
+                                        <polygon class="ipc-hover"
+                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
+                                        </polygon>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="sugg-image">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
+                                    <div class="overly"></div>
+                                </div>
 
+                                <a class="ratting-box text-dark">
 
+                                    <div class="sugg-ratting">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path
+                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
+                                            </path>
+                                        </svg>
+                                        <span>7.4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="sugg-name">
+                                    <a class="text-dark my-a">
+                                        <span>Luca</span>
+                                    </a>
+                                </div>
 
+                                <div class="sugg-watchlist">
+                                    <a class="m-0 text-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                        Watchlist
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="sugg-box-1">
+
+                                <div class="sugg-icon">
+                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
+                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
+
+                                        <polygon class="ipc-back"
+                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
+                                        <polygon class="ipc-hover"
+                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
+                                        </polygon>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="sugg-image">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
+                                    <div class="overly"></div>
+                                </div>
+
+                                <a class="ratting-box text-dark">
+
+                                    <div class="sugg-ratting">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path
+                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
+                                            </path>
+                                        </svg>
+                                        <span>7.4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="sugg-name">
+                                    <a class="text-dark my-a">
+                                        <span>Luca</span>
+                                    </a>
+                                </div>
+
+                                <div class="sugg-watchlist">
+                                    <a class="m-0 text-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                        Watchlist
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="sugg-box-1">
+
+                                <div class="sugg-icon">
+                                    <svg class="ipc-bac" width="26px" height="40px" viewBox="0 0 24 34"
+                                        xmlns="http://www.w3.org/2000/svg" role="presentation">
+
+                                        <polygon class="ipc-back"
+                                            points="24 0 0 0 0 32 12.2436611 26.2926049 24 31.7728343"></polygon>
+                                        <polygon class="ipc-hover"
+                                            points="24 31.7728343 24 33.7728343 12.2436611 28.2926049 0 34 0 32 12.2436611 26.2926049">
+                                        </polygon>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="text-white" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="sugg-image">
+                                    <img class="sugg-image-img" src="./Image/image 3.png" alt="">
+                                    <div class="overly"></div>
+                                </div>
+
+                                <a class="ratting-box text-dark">
+
+                                    <div class="sugg-ratting">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-bloc-star" viewBox="0 0 24 24" fill="currentColor"
+                                            role="presentation">
+                                            <path
+                                                d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
+                                            </path>
+                                        </svg>
+                                        <span>7.4</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-star"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M19.65 9.04l-4.84-.42-1.89-4.45c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5 4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.73 3.67-3.18c.67-.58.32-1.68-.56-1.75zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <div class="sugg-name">
+                                    <a class="text-dark my-a">
+                                        <span>Luca</span>
+                                    </a>
+                                </div>
+
+                                <div class="sugg-watchlist">
+                                    <a class="m-0 text-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            class="ipc-icon ipc-icon--add ipc-btn__icon ipc-button__icon--pre"
+                                            viewBox="0 0 24 24" fill="currentColor" role="presentation">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path
+                                                d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z">
+                                            </path>
+                                        </svg>
+                                        Watchlist
+                                    </a>
+                                </div>
+
+                            </div>
+                         
 
                         </div>
 
-                        <span class="sugg-icon-right">
-                            <i class="fas fa-chevron-right"></i>
-                        </span>
+                     
 
 
                     </div>
@@ -1449,7 +1531,7 @@
 
                 <div class="storyLine">
                     <div class="heading-text">
-                        <a href="#" class="">
+                        <a href="#" class="ps-2">
                             <p class="heading-text-p fs-3 text-bold"> Storyline </p>
                         </a>
                         <a href="#" class="svg-right mx-5 my-3 p-1">
@@ -1461,7 +1543,7 @@
                                 </path>
                             </svg>
 
-                            <span class="fs-6">Edit</span>
+                            <span class="fs-6 ">Edit</span>
 
                         </a>
 
@@ -1484,12 +1566,12 @@
                             <a href="#" class="btn my-btn a-green"> 58 more</a>
                         </div>
 
-                        <hr class="text-secondary my-3">
-                        <p class="text-dark fs-7 m-0">
+                        <hr class="text-secondary my-3 my-sm-1">
+                        <p class="text-dark fs-6 m-0">
                             <a href="#" class="fs-6 a-green my-a">Plot summary</a> .
                             <a href="#" class="fs-6 a-green my-a">Plot synopsis</a>
                         </p>
-                        <hr class="text-secondary m-1">
+                        <hr class="text-secondary my-1">
                         <p class="text-dark fs-7 m-0">
                             <span class="fs-6">Genres </span>
                             <a href="#" class="px-1 my-a a-green"> Animation</a>.
@@ -1499,11 +1581,11 @@
                             <a href="#" class="px-1 my-a a-green">Family</a>.
                             <a href="#" class="px-1 my-a a-green">Fantasy</a>
                         </p>
-                        <hr class="text-secondary m-1">
+                        <hr class="text-secondary my-1">
                         <p class="text-dark fs-6 m-0">
                             <span class="fs-6">Certificate PG </span>
                         </p>
-                        <hr class="text-secondary m-1">
+                        <hr class="text-secondary my-1">
                         <p class="text-dark fs-6 m-0">
                             <span class="fs-6">Parents guide </span>
                         </p>
@@ -1515,13 +1597,13 @@
 
                     <div class="heading-text my-2">
 
-                        <a href="#" class="">
-                            <p class="heading-text-p fs-3"> User Reviews <span class="fs-7 mb-3">1.1k </span>
+                        <a href="#" class="ps-2">
+                            <p class="heading-text-p fs-3"> User Reviews <span class="fs-7 mb-3 rel-top-5">1.1k </span>
                                 <span class="icon"><i class="fas fa-chevron-right"></i>
                                 </span>
                             </p>
                         </a>
-                        <a href="#" class="a-green svg-right mx-5 my-3 p-1">
+                        <a href="#" class="a-green svg-right mx-5 mx-sm-2 my-3 p-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="a-green"
                                 viewBox="0 0 24 24" fill="currentColor" role="presentation">
                                 <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -1563,7 +1645,6 @@
                                         </path>
                                     </svg>
                                 </span>
-
                                 helpful . <a href="my-a">147</a>
                             </span>
                             <span class="icon-dislike">
@@ -1577,13 +1658,13 @@
                                     </svg>
                                 </span>
                             </span>
-                            <span class="three-dot sheir-icon">
+                            <span class="three-dot reviews-sheir-icon">
                                 <span class="i-dot">
                                     <i class=" fas fa-ellipsis-v"></i>
                                 </span>
                             </span>
 
-                            <div class="socal-icon-list">
+                            <div class="socal-icon-list reviews-socal-icon-list">
                                 <ul class="">
                                     <li><a href="#">
                                         <i class="fs-4 text-white-50 fab fa-facebook-square"></i>
@@ -1622,9 +1703,6 @@
 
 
             </div>
-
-
-
 
 
             <!--                                     Right part start -->
@@ -1691,13 +1769,13 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <a href="#" class="m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
                                 <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
 
-                            <div class="col-3 movie-item-img px-1">
+                            <div class="col-3 movie-item-img">
                                 <img src="./Image/1.jpg" alt="">
                             </div>
 
@@ -1705,13 +1783,13 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class="m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
 
-                            <div class="col-3 movie-item-img px-1">
+                            <div class="col-3 movie-item-img">
                                 <img src="./Image/1.jpg" alt="">
                             </div>
 
@@ -1719,13 +1797,13 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time  text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
 
-                            <div class="col-3 movie-item-img px-1">
+                            <div class="col-3 movie-item-img">
                                 <img src="./Image/1.jpg" alt="">
                             </div>
 
@@ -1801,8 +1879,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class="m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1815,8 +1893,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1829,8 +1907,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1867,8 +1945,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time  text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1881,8 +1959,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1895,8 +1973,8 @@
                         <div class="movie-item row p-1 my-1">
 
                             <div class="col-9 movie-item-text p-0">
-                                <a href="#" class="fs-8 m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
-                                <span class="update-time fs-8 text-secondary">updated 2 weeks ago . <span>image</span>
+                                <a href="#" class=" m-0 d-block">The Most Anticipated Movies Coming in 2021</a>
+                                <span class="update-time text-secondary">updated 2 weeks ago . <span>image</span>
                                 </span>
                             </div>
 
@@ -1928,8 +2006,8 @@
     <script src="../js/jquery-slim.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.min.js"></script> -->
+
     <script src="./js/post.js"></script>
 </body>
 

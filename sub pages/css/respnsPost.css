@@ -1,4 +1,13 @@
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
+    .video-icon-right,
+    .video-icon-left
+    {
+        top: 120px;
+        font-size: 1.7rem;
+    
+    }
+}
+@media (max-width: 1005px) {
     .nav{
         display: none;
     }
@@ -15,6 +24,9 @@
     .sub-nav {
         padding: 0rem .5rem;
     }
+    .socal-icon-list{
+        width: 50%;
+    }
 
    .sub-nav .my-nav-ul{
         display: none;
@@ -25,14 +37,17 @@
     
     }
     .post-more-box{
-       
-        height: 50px;
+        height: 35px;
         width: 100%;
-        padding: 1rem 0rem;
+        padding: 0.5rem 0rem;
+        display: table;
     }
+    
     .post-more-box p{
        display: inline;
+      
     }
+
 
     .my-text-detals{
         display: none;
@@ -73,4 +88,109 @@
        text-align: center;
     }
     
+}
+@media (max-width: 700px) {
+  
+    .post-img-box .single-img {
+        height: 100%;
+    }
+    .previews {
+        background-color: var(--bg_50);
+        padding: 1rem 1rem;
+        margin: 0rem;
+        top: 20px;
+        z-index: 2;
+    }
+    .sugg-ratting svg:last-child{
+        margin-left: 0rem;
+    }
+    .my-btn-grup-1 .my-btn{
+        margin: 3px 0px;
+        padding: 4px 8px;
+    }
+    
+
+
+}
+
+@media (max-width: 576px) {
+
+    .post-btn span{
+        display: none;
+    }
+
+    .socal-icon-list{
+        width: 74%;
+    }
+    .post-img{
+        position: absolute;
+        z-index: 1;
+    }
+    .post-img-box{
+        width: 120px;
+        top: 119px;
+        left: 7px;
+    }
+ 
+    .post-video {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .play p{
+       display: none;
+    }
+    .play{
+    position: absolute;
+    top: 7%;
+    left: 47%;
+    color: #79D70F !important;
+    }
+    .previews {
+        background-color: var(--bg_50);
+        padding: 1rem 1rem;
+        margin: 0rem;
+        right: 0;
+        top: 20px;
+    }
+    .video-icon-right,
+    .video-icon-left,
+    .side-icon-right,
+    .side-icon-left,
+    .svg-right span,
+    .sugg-icon-right,
+    .sugg-icon-left
+    {
+        display: none;
+     
+    }
+    .more-image{
+        margin: 0;
+    }
+    .artist-1 img {
+        width: 117px;
+        height: 84px;
+    
+    }
+    .svg-right {
+        margin: 1rem 0rem;
+    }
+    .carsoul-suggest {
+        width: 400%;
+    }
+
+
+
+}
+
+@media (max-width: 330px) {
+    .post-img-box .single-img {
+        width: 70px;
+    }
+    .my-btn-grup .my-btn {
+        margin: 0px 3px;
+        padding: 3px 4px;
+    }
+
 }
