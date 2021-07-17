@@ -1,9 +1,10 @@
 body{
     background-color: #F1FAEE;
-    color: #EDF4F2;
+    /* color: #EDF4F2; */
 
 
 }
+
   /* Navigation main */
 .nav {
     height: 60px;
@@ -21,11 +22,24 @@ body{
 }
 .max-lg-width{
     max-width: 1540px;
-    /* text-align: center; */
+    margin: auto;
 }
 
 
 /*                             Utility class start */
+:root {
+    --bg_primary: #D32626;
+    --bg_lite: #8D2828;
+    
+    --bg_1: #AA3A3A;
+    --bg_50: #0000002c;
+
+    --white: #EDF4F2;
+    --green: #79D70F;
+    --black: #171717;
+
+
+  }
 .fs-8{
     font-size: .8rem;
 }
@@ -53,21 +67,33 @@ a:hover{
 a svg:hover{
     color: #79D70F;
 }
+.overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+}
+.rel-top-5{
+    position: relative;
+    top: -5px;
+}
 /*                         Utility class end */
 
 /*                    My-heading start */
 
 .my-heading{
-    background-color: #D32626;
-    color: #EDF4F2;
-    padding: .5rem 0rem;
+    background-color: var(--bg_primary);
+    color: var(--white);
+    padding: .2rem 0rem;
     margin: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.808);
 }
 .my-ratting{
     height: 45px;
-    width: 100px;
+    width: 90px;
     margin: 1px;
     border-radius: 7px;
 }
@@ -76,7 +102,7 @@ a svg:hover{
     display: none;
 }
 .my-ratting:hover{
-    background-color: #AA3A3A;
+    background-color: var(--bg_1);
 }
 .rating-numb p{
     font-size: .8rem;
@@ -85,8 +111,9 @@ a svg:hover{
 
 /*                                     SubNAv start here                */
 .sub-nav{
-    background-color: #AA3A3A;
-    color: #EDF4F2;
+    position: relative;
+    background-color: var(--bg_1);
+    color: var(--white);
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -107,10 +134,10 @@ a svg:hover{
 .my-nav-ul li a{
     position: relative;
     padding: 3px 6px;
-    color: #EDF4F2;
+    color: var(--white);
 }
 .my-nav-ul li a:hover{
-    color: #79D70F;
+    color: var(--green);
 }
 .my-nav-ul li a::before{
     content: "";
@@ -121,34 +148,90 @@ a svg:hover{
 }
 .my-nav-ul li a:hover::before {
     width: 90%;
-    background-color: rgb(255, 255, 255);
+    background-color:var(--white);
 }
-.sub-nav .my-btn{
-    color: #EDF4F2;
+.sub-nav .post-btn{
+    color: var(--white);
     background-color: transparent;
+    padding-top: 8px;
+    border: none !important;
 }
-.sub-nav .my-btn:hover{
-    background-color: #0000002c;
-    border-radius: 5px;
+
+.sub-nav .post-btn:hover{
+    background-color: var(--bg_50);
+    border-radius: 8px;
     opacity: 1;
-    color: #79D70F;
+    color: var(--green);
 }
 .sub-nav .sheir-btn{
-    margin: 8px;
-    padding: 0px 7px;
-    border-radius: 93px;
+    padding: .5rem;
+    clip-path: circle();
 }
 .sub-nav .sheir-btn:hover{
-    background-color: #0000002c;
+    background-color: var(--bg_50);
 }
 .sub-nav .sheir-btn svg{
-    margin-top: 5px;
+    margin-top: 6px;
+}
+/*           Socal list */
+.socal-icon-list{
+    position: absolute;
+    border-radius: 5px;
+    transition: all ease 1s .1s;
+    right: 0px;
+    z-index: 33;
+    width: 20%;
+    animation: rightLeft 1s;
+    display: none;
+}
+@keyframes rightLeft {
+    0%{
+        transform: translatex(600px);
+        opacity: .5;
+    }
+    50%{
+        /* transform: translatex(200px); */
+        opacity: .5;
+
+    }
+    100%{
+        transform: translatex(0px);
+    }
+    
+}
+.socal-icon-list ul{
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.socal-icon-list ul li{
+    /* border: 1px solid; */
+    box-shadow: 0px 0px 1px var(--white);
+}
+.socal-icon-list ul li a svg{
+    color:var(--white);
+    opacity: .8;
+    margin: 0px 10px;
+}
+.socal-icon-list ul li span{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.socal-icon-list ul li:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+}
+.subNav-socal-icon-list{
+    background-color: var(--bg_lite);
+    top: 48px;
+
 }
 
 /*                              Singal  post  start               */
 
 .specific-post{
-    background-color: #D32626;
+    background-color: var(--bg_primary);
 }
 .post-img{
     position: relative;
@@ -162,31 +245,36 @@ a svg:hover{
     position: relative;
     border-radius: 2px;
     width: 100%;
-    height: 100%;
-}
-.overly{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    mix-blend-mode: overlay;
+    height: 99.5%;
+
 }
 .post-img-box:hover .overly {
     z-index: 2;
-    background: rgba(24, 23, 23, 0.273);
+    background: var(--bg_50);
 }
-.post-img-box .text-font{
+.my-position{
+    position: absolute;
+    top: 0;
     z-index: 3;
 }
-.post-img-box .icon-back{
-    z-index: 3;
+.my-position .icon-font{
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    color: var(--white);
+    z-index: 4;
+    cursor: pointer;
 }
-.post-img-box .icon-back:hover{
-    color: red;
+.my-position .icon-back{
+    position: absolute;
+    top: -2px;
+    opacity: .7;
+}
+.my-position:hover .icon-back{
+    opacity: .5;
 }
 
-/*                          Tailer main  Vdeo part             */
+/*        Tailer main  Vdeo part             */
 .post-video{
     position: relative;
 }
@@ -196,13 +284,14 @@ a svg:hover{
     position: absolute;
     bottom: 20px;
     left: 20px;
-    z-index: 1;
+    z-index: 3;
+    cursor: pointer;
 }
 .post-video:hover .play svg{
-    color: chartreuse;
+    color: var(--green);
 }
 .post-video-box{
-    
+    /* position: relative; */
 }
 .post-video-box:hover .overly{
     z-index: 2;   
@@ -212,23 +301,22 @@ a svg:hover{
     object-fit: cover;
     height: 98%;
     width: 99%;
-    left: 3px;
+    border-radius: 2px;
 }
 .three-dot{
-    display: inline-block;
     float: right;
-    right: 15px;
+    right: 20px;
     top: 10px;
-    z-index: 3;
+    cursor: pointer;
 }
 .three-dot:hover .three-dot-icon{
-    color: #79D70F;
-    z-index: 10;
+    color: var(--green);
 }
 .three-dot-icon{
-    color: rgb(255, 255, 255);
+    color: var(--white);
     position: relative;
-    z-index: 10;
+    z-index: 3;
+
 }
 .three-dot-icon::after{
     content: '';
@@ -239,31 +327,17 @@ a svg:hover{
     top: -7px;
     padding: 19px;
     border-radius: 29px;
-    background: rgba(231, 12, 12, 0.184);
-    z-index: 5;
-
-}
-.three-dot-icon::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    right: -16px;
-    top: -7px;
-    padding: 19px;
-    border-radius: 29px;
-    background: rgba(255, 255, 255, 0.184);
-    z-index: 5;
+    background: rgba(182, 93, 20, 0.473);
 
 }
 .previews{
     position: absolute;
     display: inline-block;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.219);
+    color: var(--white);
+    background-color: var(--bg_50);
     padding: 1rem 2rem;
     margin: 1rem;
-    z-index:35;
+    z-index: 2;
     right: 0;
     top: 34px;
     display: none;
@@ -271,7 +345,7 @@ a svg:hover{
 
 /*                            Right Post more box                        */
 .my-svg{
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .post-more{
 
@@ -281,11 +355,11 @@ a svg:hover{
     color: #EDF4F2;
     background-color: #AA3A3A;
     border-radius: 5px;
-    height: 50%;
+    height: 48%;
     text-align: center;
     justify-content: center;
-    padding: 4rem 0rem;
     box-shadow: 0px 0px 2px rgba(255, 253, 253, 0.808);
+    padding-top: 48%;
 }
 .post-more-box:hover .overly{
     background: rgba(24, 23, 23, 0.273);
@@ -305,14 +379,14 @@ a svg:hover{
 }
 .my-btn-grup .my-btn{
     border-radius: 20px;
-    color: #EDF4F2;
+    color: var(--white);
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.824);
     margin: 0px 7px;
     padding: 6px 12px;
 }
 .my-btn:hover{
-    color: black;
-    background-color: rgba(0, 0, 0, 0.158);
+    color: var(--black);
+    background-color: var(--bg_50);
 }
 /* fot responsive top-creadit */
 .top-creadit{
@@ -330,26 +404,34 @@ a svg:hover{
     color: #05ec34;
 }
 .Watchlist{
-    /* background-color: blue; */ 
+    /* background-color: blue;  */
 }
 .Watchlist-top{
-    padding: 7px 5px;
     display: flex;
 }
 .Watchlist-top p{
-    background-color: #AA3A3A;
+    background-color: var(--bg_1);
     padding: 7px 5px;
     width: 360px;
     display: inline;
 }
+
 .arrow-bottom{
-    background-color: #AA3A3A;
+    background-color: var(--bg_1);
     padding: 5px;
     margin-left: 3px;
 }
+.arrow-bottom:hover,
+.Watchlist-top p:hover,
+.Watchlist-link a:hover{
+    background-color: var(--bg_50);
+    
+}
+.Watchlist-link {
+    margin: 5px 5px;
+}
 .Watchlist-link a{
-    padding: 0px 5px;
-
+    padding: 0px 3px;
 }
 
 
@@ -408,16 +490,15 @@ a svg:hover{
 .more-trailer-video{
     position: relative;
     overflow: hidden;
-    margin: 0rem 3rem;
-    padding-bottom: 3rem;
-    /* border: 2px solid red; */
+    margin: 0rem 1rem;
+    padding-bottom: 2rem;
 }
 .video-icon-right,
 .video-icon-left
 {
     color: rgb(255, 245, 245);
-    position: absolute;
-    top: 42%;
+    position: relative;
+    top: 140px;
     vertical-align: middle;
     font-size: 2rem;
     z-index: 3;
@@ -426,10 +507,11 @@ a svg:hover{
     border-radius: 2px;
 }
 .video-icon-left{
-    left: 51%;
+    left: 3%;
+    padding-right: 0;
 }
 .video-icon-right{
-    right: 51%;
+    left: 88%;
 }
 .more-trailer-video a:hover{
     color: #79D70F;
@@ -440,7 +522,7 @@ a svg:hover{
     flex-direction: row;
     flex-wrap: nowrap !important;
     position: relative;
-    width: 200%;
+    width: 250%;
     transition: all ease 1s .1s;
   
 }
@@ -448,13 +530,10 @@ a svg:hover{
     width: 25%;
 }
 .more-trailer-link{
-    padding: 5px 7px;
     position: relative;
     height: 100%;
-    width: 99%;
+    width: 100%;
 
-    /* height: 400px; */
-    /* width: 300px; */
 
 }
 .play-btn-small{
@@ -509,20 +588,37 @@ a svg:hover{
 /*                                Img  Part   */
 .ImgPart{
     position: relative;
-    transition: all;
+    /* transition: all;
     transition-timing-function: ease-in-out;
     transition-delay: .1s;
-    transition-duration: 1s;
+    transition-duration: 1s; */
 }
 .more-image{
-    margin: 0rem 4rem;
+
+    position: relative;
+    overflow: hidden;
+    margin: 0rem 1rem;
+    padding-bottom: 2rem;
+
 }
 #sliderImg {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    position: relative;
+    width: 250%;
+    transition: all ease 1s .1s;
+}
+#sliderImg a{
+    width: 170px;
 }
 #sliderImg img{
-    max-width: 175px;
-    width: 24%;
+    width: 100%;
+    height: 100%;
+    /* height: 230px; */
+
+    padding: 0px 1px;
+    box-shadow: 0px 0px 5px rgb(158, 158, 158);
 }
 /*                                      Top Cast start  */
 .artist-list{
@@ -556,6 +652,7 @@ a svg:hover{
 }
 .artist-img{
 }
+
 /*                      Directors information start */
 .Directors-information{
     
@@ -571,17 +668,17 @@ a svg:hover{
 
 }
 /*                                       Sugg box start */
-.svg-right{
-    float: right;
-    margin: 1rem 5rem;
+
+
+
+.Supggest-Box{
+    position: relative;
+
 }
-.svg-right:hover{
-    background-color: rgba(15, 13, 13, 0.048);
-    border-radius: 5px;
-    color: #79D70F;
-}
+
 .suggest-box{
     overflow: hidden;
+    position: relative;
 }
 .carsoul-suggest{
     display: flex;
@@ -592,21 +689,23 @@ a svg:hover{
     transition: all ease 1s .1s;
 }
 .sugg-box-1{
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.568);
-    position: relative;
-    z-index: 1;
-    /* max-width: 550px; */
-    /* height: 100%; */
     width: 15%;
+    z-index: 1;
+    position: relative;
     margin: 5px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.568);
+    transition: 0.5s;
+
+}
+.sugg-box-1:hover{
+    transform: translateY(-5px);
 }
 .sugg-icon-right,
 .sugg-icon-left
 {
     color: rgb(255, 245, 245);
-    position: relative;
-    top: 42%;
-    vertical-align: middle;
+    position: absolute;
+    top: 41%;
     font-size: 2rem;
     z-index: 3;
     padding: 0px 6px;
@@ -614,17 +713,22 @@ a svg:hover{
     border-radius: 2px;
 }
 .sugg-icon-left{
-    left: 1%;
-    top: 220px;
-   
+    left: 1%;   
 }
 
 .sugg-icon-right{
     left: 95%;
-    bottom: 292px;
 }
 
-
+.svg-right{
+    float: right;
+    margin: 1rem 5rem;
+}
+.svg-right:hover{
+    background-color: rgba(15, 13, 13, 0.048);
+    border-radius: 5px;
+    color: #79D70F;
+}
 .sugg-icon{
     position: absolute;
     color: white;
@@ -663,23 +767,13 @@ a svg:hover{
 
 }
 .sugg-ratting{
-    margin: .5rem 1.2rem;
-
-
+    margin: 1rem 1.2rem;
 }
-.ipc-bloc-star{
-    /* color: #05ec34; */
-}
-.ipc-star{
-    margin-left: 2rem;
-    /* color: transparent; */
-    /* background-color: white; */
-
+.sugg-ratting svg:last-child{
+    margin-left: 1rem;
 }
 .ipc-star:hover{
     background-color: rgba(0, 0, 0, 0.11);
-    
-
 }
 .sugg-name{
     margin: 1rem 1.2rem;
@@ -688,25 +782,32 @@ a svg:hover{
 .sugg-watchlist{
     background-color: rgba(0, 0, 0, 0.253);
     border-radius: 7px;
-    padding: .3rem 2.5rem;
-    margin: .5rem 1.2rem;
+    padding: .3rem 0px;
+    text-align: center;
+    margin: .5rem 0.2rem;
 }
 .sugg-watchlist:hover{
     background-color: rgba(8, 8, 8, 0.158);
 
 }
+
+
 /*                 STORYLINE START */
 .my-btn-grup-1{
-    /* background-color: #05ec34; */
+    width: 100%;
+
 }
 .my-btn-grup-1 .my-btn{
+    position: relative;
+    display: inline-block;
     border-radius: 20px;
     color: #000000;
     box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.233);
-    margin: 0px 7px;
+    margin: 7px 7px;
     padding: 6px 12px;
 }
-/*                       Reviews  */
+
+/*                    User   Reviews  */
 .reviews-box{
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.603);
     padding: 1rem;
@@ -754,38 +855,12 @@ a svg:hover{
 .i-dot:hover{
     background-color: rgba(0, 0, 0, 0.096); 
 }
-
-/*           Socal list */
-.socal-icon-list{
-    position: absolute;
-    right: 75px;
-    display: none;
-    transition: all ease 1s .1s;
-
-}
-.socal-icon-list ul{
-    background-color: rgb(0, 0, 0);
-    display: inline-block;
-    padding: 1rem;
-    border-radius: 5px;
-
-
-}
-.socal-icon-list ul li{
-    border: 1px solid;
-
-
-}
-.socal-icon-list ul li span{
-    color: rgb(255, 255, 255);
-    font-size: 1.2rem;
+.reviews-socal-icon-list{
+    background-color: var(--black);
+    color: var(--white);
 }
 
 
-.socal-icon-list ul li:hover{
-    background-color: rgba(255, 255, 255, 0.315);
-
-}
 
 
 
@@ -849,7 +924,7 @@ a svg:hover{
     border: 1px solid rgb(139, 139, 139);
     border-radius: 3px;
     margin: 0;
-    height: 76px;
+    /* height: 76px; */
 
 }
 .movie-item-text{
@@ -864,13 +939,13 @@ a svg:hover{
     float: bottom;
 }
 .movie-item-img{
-    /* position: relative; */
+    overflow: hidden;
 
 }
 .movie-item-img img{
     height: 100%;
-    width: 90%;
-    float: right;
+    width: 124%;
+  
 }
 .movie-item-img:hover{
     opacity: .8;

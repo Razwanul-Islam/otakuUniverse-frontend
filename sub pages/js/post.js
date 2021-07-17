@@ -1,12 +1,30 @@
 var myVideo = document.querySelector(".carsoul-video");
 
 function next(){
-    var a=-100;
-    myVideo.style.left = a + "%";
+    first= first-50;
+    if(first > -200){
+        myVideo.style.left =first + "%";
+    }
+    else{
+      first=-200;
+      myVideo.style.leftt =first + "%";
+
+
+    }
 }
 function prev(){
 
-    myVideo.style.left = "0%";
+    first= first+50;
+
+    if(first <= 0){
+      myVideo.style.left =first + "%";
+    }
+    else{
+      first=0;
+      myVideo.style.left =first + "%";
+  
+  
+    }
 }
 
 
@@ -65,7 +83,6 @@ var imgTag = document.querySelectorAll("a img")[0];
 var img2 = document.querySelector(".img-2");
 count =0;
 
-
 function nextImg(){
     count++;
 
@@ -78,10 +95,7 @@ function nextImg(){
 
         imgTag.src = photos[count];
         img2.src = photos[count-1];
-
-
     }
-
 }
 
 function prevImg(){
@@ -100,18 +114,38 @@ function prevImg(){
 
 
     }
-  
-    
 }
 
 
 
 
+// SunNav sheir btn start
 
+var sheir_btn = document.querySelector(".sheir-btn");
+
+function singleClick() {
+    document.querySelector(".subNav-socal-icon-list").style.display = "block";
+}
+
+function doubleClick() {
+    document.querySelector(".subNav-socal-icon-list").style.display = "none";
+}
+sheir_btn.addEventListener("click", function(){
+    clickCount++;
+    if (clickCount === 1) {
+            singleClick();
+        }
+     
+    else if (clickCount === 2) {
+        doubleClick();
+        clickCount = 0;
+    }
+});
+//              SunNav sheir btn end
 
 
 //                           Doubleclick  single click  event
-// For video previews
+// video previews start
 var previews = document.querySelector(".previews");
 var previews_click = document.querySelector(".previews-click");
 
@@ -124,7 +158,6 @@ function doubleClick1() {
 
 }
 var clickCount = 0;
-
 previews_click.addEventListener("click", function(){
     clickCount++;
     if (clickCount === 1) {
@@ -136,31 +169,33 @@ previews_click.addEventListener("click", function(){
         clickCount = 0;
     }
 });
+// video previews End
 
 
-// For socal icon
-var my_icon = document.querySelector(".sheir-icon");
-function singleClick() {
-    document.querySelector(".socal-icon-list").style.display = "block";
 
-}
+//                    For socal icon
+var my_icon = document.querySelector(".reviews-sheir-icon");
 
-function doubleClick() {
-    document.querySelector(".socal-icon-list").style.display = "none";
-
+function singleClick2() {
+    document.querySelector(".reviews-socal-icon-list").style.display = "block";
 
 }
 
+function doubleClick2() {
+    document.querySelector(".reviews-socal-icon-list").style.display = "none";
+
+
+}
 var clickCount = 0;
 
 my_icon.addEventListener("click", function(){
     clickCount++;
     if (clickCount === 1) {
-            singleClick();
+            singleClick2();
         }
      
     else if (clickCount === 2) {
-        doubleClick();
+        doubleClick2();
         clickCount = 0;
     }
 });
